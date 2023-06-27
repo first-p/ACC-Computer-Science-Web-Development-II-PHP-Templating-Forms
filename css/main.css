@@ -1,0 +1,276 @@
+
+/***************************************
+Name: Fred Butoma
+Assignment 4
+File: main.css
+Purpose: This is the styling for the website.
+****************************************/
+
+body, html {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+footer{
+    background: #bdd7ff;
+    height: 62px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-body {
+    margin: 0 auto;
+}
+
+.error {
+    padding: 50px;
+    border: 1px solid red;
+    color: crimson;
+}
+.success {
+    padding: 50px;
+    border: 1px solid aquamarine;
+    color: aquamarine;
+}
+
+.nav-section{
+    padding-top: 10px;
+    height: 60px;
+    background: #5681c4;
+}
+
+form {
+    padding-bottom: 80px;
+}
+
+.body-div{
+    text-align: center;
+}
+
+.centered{
+    text-align: center;
+}
+
+.body-header {
+    padding: 10px;
+}
+
+.body-content {
+    padding: 10px;
+}
+
+div.form_error{
+    color:red;
+}
+
+@media screen and (max-width:480px) {
+    .body {
+        width: 100%;
+    }
+
+    .body-content {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .body {
+        display: flex;
+    }
+    .body-content {
+        width: 50%;
+    }
+    .body-footer {
+        width: 50%;
+    }
+}
+
+
+
+/***************************************
+Name: Fred butoma
+Assignment 3
+File: main.css
+Purpose: This website takes input from
+         from the user, then generates
+         a title using their inputs.
+****************************************/
+
+/* Global Styles */
+
+/* Set default font family and size */
+h1{
+    font-size: 0.8em;
+}
+
+/* Set a max width and center the content */
+.container {
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+
+/* Style the header tag */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Set the h2 tag inside the header */
+header h2 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+
+/* Style the navigation */
+nav {
+    background-color: #eee;
+    padding: 10px 20px;
+}
+
+/* Set the ul tag inside the navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Set the li tag inside the navigation */
+nav ul li {
+    margin-right: 10px;
+}
+
+/* Set the a tag inside the navigation */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Set the active link in the navigation */
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Form Styles */
+
+/* Style the form label */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align:  center;
+}
+
+/* Style the form input */
+form input[type="text"],
+form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Style the form button */
+form button {
+    background-color: #339;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 200px;
+
+}
+
+
+/* Media Query */
+
+/* Style the navigation for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+
+/*************
+*Media Queries
+**************/
+
+/* Style the navigation for smaller screens */
+@media (min-width:480px) and (max-width:1024px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+        text-align:center;
+    }
+    select{
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+    input{
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+}
+
+
+/*this is for desktop, more than 1024px wide*/
+@media (min-width:1024px){
+
+    li{
+        display: inline;
+        text-align: center;
+
+    }
+    select{
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    input{
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+.form-error {
+    color: crimson;
+    padding: 10px;
+}

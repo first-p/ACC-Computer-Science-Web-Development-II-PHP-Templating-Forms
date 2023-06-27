@@ -1,0 +1,64 @@
+<!-- -----------------------------------
+Name: Fred Butoma
+Assignment 5
+File: title_body.html
+Purpose: Body html for title generator form
+--------------------------------------->
+<hr>
+</div>
+
+<form id="title-form" action="process.php" method="post">
+
+    <label for="title">Title</label><br>
+    <select id="title" name="title">
+        <option value="" seclected></option>
+        <option value="Mr.">Mr.</option>
+        <option value="Mrs.">Mrs.</option>
+        <option value="Ms.">Ms.</option>
+        <option value="Dr.">Dr.</option>
+        <option value="Sir">Sir</option>
+        <option value="Madam">Madam</option>
+        <option value="Lord">Lord</option>
+        <option value="King">King</option>
+        <option value="Queen">Queen</option>
+        <option value="Prince">Prince</option>
+        <option value="Princess">Princess</option>
+        <option value="Duke">Duke</option>
+        <option value="Dutchess">Dutchess</option>
+    </select><br>
+    <div id="title_title_error" class="form_error">{{title_error}}</div>
+
+
+    <label for="favorite_drink">Favorite Drink</label><br>
+    <input type="text" id="favorite_drink" name="fave_drink" placeholder="ex. Tea"><br>
+    <div id="title_drink_error" class="form_error">{{drink_error}}</div>
+
+
+    <label for="pet_name">Pets Name</label><br>
+    <input type="text" id="pet_name" name="pet_name" placeholder="ex. Rex"><br>
+    <div id="title_pet_error" class="form_error">{{pet_error}}</div>
+
+
+    <label for="favorite_fictional_place">Favorite Fictional Place</label><br>
+    <input type="text" id="favorite_fictional_place" name="fave_fictional_place" placeholder="ex. Narnia"><br>
+    <div id="title_fict_place_error" class="form_error">{{fict_place_error}}</div>
+
+    <label for="favorite_real_place">Favorite Real Place</label><br>
+    <input type="text" id="favorite_real_place" name="fave_real_place" placeholder="ex. Texas"><br>
+    <div id="title_real_place_error" class="form_error">{{real_place_error}}</div>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="Enter email" name="email">
+    <div id="title_email_error" class="form_error">{{email_error}}</div>
+
+    <div id="msg"></div>
+    <button type="submit">Submit</button>
+
+    <!--  add the clear form button  -->
+    <button type="button" id="btn-clear-form">Clear form</button>
+</form>
+
+<!-- load the main.js on the form page only -->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/title.js"></script>

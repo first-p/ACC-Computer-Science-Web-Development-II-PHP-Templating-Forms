@@ -1,0 +1,13 @@
+<!-- -----------------------------------
+Name: Fred Butoma
+Assignment 4
+File: error.html
+Purpose: uses template partials to make an error page
+--------------------------------------->
+
+{{> ../partials/header }}
+<div class="error">
+    {{ error }}
+    <br><a href="/title.php">Try again.</a>
+</div>
+{{> ../partials/footer }}

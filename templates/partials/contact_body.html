@@ -1,0 +1,43 @@
+<!-- -----------------------------------
+Name: Fred Butoma
+Assignment 4
+File: title_body.html
+Purpose: Body html for contact form page
+--------------------------------------->
+<hr>
+</div>
+
+<form id="email-form" name="email-form" action="email.php" method="post">
+
+  <label for="name">Name</label><br>
+  <input id="name" type="text" name="name" maxlength="64" placeholder="Enter name">
+  <div id="name_error" class="form_error">{{name_error}}</div>
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" maxlength="64" placeholder="Enter email">
+  <div id="email_error" class="form_error">{{email_error}}</div>
+
+  <label for="confirm-email">Confirm email</label>
+  <input type="text" id="confirm-email" name="confirm_email" maxlength="64" placeholder="Confirm email">
+  <div id="confirm_email_error" class="form_error">{{confirm_email_error}}</div>
+
+  <label for="subject">Subject</label>
+  <input type="text" id="subject" name="subject" maxlength="64" placeholder="Subject">
+  <div id="subject_error" class="form_error">{{subject_error}}</div>
+
+  <label for="message">Message</label>
+  <textarea type="text" id="message" name="message" maxlength="1000" placeholder="Message"></textarea>
+  <div id="msg_error" class="form_error">{{msg_error}}</div>
+
+  <div id="msg"></div>
+
+  <button type="submit" id="send-btn">Send</button>
+
+  <!--  add the clear form button  -->
+  <button type="button" id="clear-btn">Clear form</button>
+</form>
+
+<!-- load contact.js, main.js, and jquery on the email-form page only -->
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/contact.js"></script>

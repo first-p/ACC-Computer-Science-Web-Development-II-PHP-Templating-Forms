@@ -1,0 +1,24 @@
+<!-- -----------------------------------
+Name: Fred Butoma
+Assignment 4
+File: header.html
+Purpose: Header template to be used on all web pages
+--------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- {{pagetitle}} is a Mustache variable and will be replaced
+        with the value from the associative array value from index.php-->
+        <title>{{ pagetitle }}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/main.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" type="image/gif">
+    </head>
+    <body>
+    <nav class="nav-section">
+        <a href="/">Home</a>
+        <a href="/title.php">Title</a>
+        <a href="/contact.php">Contact</a>
+    </nav>
+
